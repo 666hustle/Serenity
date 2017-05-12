@@ -54,7 +54,7 @@ namespace Serenity.Modules.Aimbot
             // Run the main routine.
             while (true)
             {
-                if (MouseHelper.GetAsyncKeyState(SettingsManager.Aimbot.AimKey) < 0)
+                if (MouseHelper.GetAsyncKeyState(SettingsManager.Aimbot.AimKey) < 0x04)
                 {
                     // Get the screen capture.
                     var screenCapture = ScreenHelper.GetScreenCapture(MyFov.FieldOfView);
